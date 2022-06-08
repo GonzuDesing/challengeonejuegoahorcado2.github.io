@@ -1,0 +1,1 @@
+var arrPalabras = ["HTML","HMLT","MUNDO","ACERTIJO","CANVAS","CSS","JAVASCRIPT","WEB","LOGICA","LOCUAS"];

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <div class="container-titulo">
+            <a class="titulo" href="index.html">Juego de Ahorcado</a>
+            <a href="https://github.com/GonzuDesing" class="logo" >
+               <button class="btn"id="newWordBtn2">github</button> 
+            <!-- <img src="" alt="Logo cros"> -->
+            </a>
+        </div>
+    </header>
+    <main>
+        <h2 id="mWin" hidden>¡ GANASTE !</h2>
+        <h2 id="mLose" hidden>¡ PERDISTE !</h2>
+        <section class="container">
+            <div>
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="btn-container">
+                <button id="startBtn" class="btn">INICIAR</button>
+                <button id="newWordBtn" class="btn">AGREGAR PALABRA</button>            
+            </div>    
+        </section>
+        <section class="container">
+            <form id="form-Words" name="form-Words">
+                <input type="text" id="inputWord" name="inputWord" pattern="^[A-Z]+$" minlength="3" maxlength="12" required>
+                <button type="button" id="inputBtn" class="btn">AGREGAR</button>    
+            </form>
+        </section>        
+    </main> 
+</body>
+
+<script src="js/palabras.js"></script>
+<script src="js/app.js"></script>
+</html>

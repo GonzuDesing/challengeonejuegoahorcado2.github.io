@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #2B2D42;
+}
+
+.logo{
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.logo img{
+    width: 100%;
+}
+.container-titulo{
+    background: #dfe7fd;
+    width: 100vw;
+}
+.titulo{
+    display: block;
+    padding: 10px 0 0 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2em;
+    text-decoration: none;
+    color: #2B2D42;
+}
+#mWin{
+    color: palegreen;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+    padding: 20px;
+
+    animation-name: zoom;
+    animation-duration: 2s;
+}
+
+@keyframes zoom {
+    from {
+        font-size: 0;
+        color: #2B2D42;
+    }
+    to {
+        color: palegreen;
+        font-size: 3em;
+    }
+  }
+  #mLose{
+    color: salmon;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+    padding: 20px;
+
+    animation-name: colored;
+    animation-duration: 2s;
+}
+
+@keyframes colored {
+    from {
+        color: #2B2D42;
+    }
+    to {
+        color: aliceblue;
+    }
+  }
+  
+canvas {
+    display: block;
+    margin: 20px auto;
+}
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    display: block;
+    margin: 10px;
+    appearance: none;
+    border: none;
+    width: 180px;
+    padding: 10px;
+    color:#FFF;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+
+    transition: 0.5s all;
+    cursor: pointer;
+
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+#startBtn{
+    background-color: lightskyblue;
+}
+#newWordBtn{
+    background-color: lightgray;
+}
+#newWordBtn2{
+    position: initial;
+    background-color: #2B2D42;
+}
+#inputBtn{
+    background-color: #5bc0be;
+}
+
+#form-Words{
+    display: none;
+}
+#inputWord{
+    margin: 0;
+    border: 3px palegreen solid;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #2B2D42;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    color: white;
+}
+#inputWord:focus {
+    outline: none;
+}
+
+#inputWord, #inputBtn{
+    display: block;
+    margin: 20px auto;
+}
